@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Large Language Models for Code: Security Hardening and Adversarial Testing"
+date:   2023-08-28 22:21:59 +00:00
+image:
+categories: research
+author: "Jingxuan He"
+authors: "<u>Jingxuan He</u>, Martin Vechev"
+venue: "ACM CCS"
+arxiv: https://arxiv.org/abs/2302.05319
+code: https://github.com/eth-sri/sven
+website:
+---

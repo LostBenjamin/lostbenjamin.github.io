@@ -21,6 +21,7 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏄‍♂️</text></svg>">
 </head>
 
 <body>
@@ -36,10 +37,12 @@
               <p>I am a PostDoc at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, working with <a href="https://dawnsong.io/">Dawn Song</a>. I received my PhD from <a href="https://www.sri.inf.ethz.ch/">the SRI Lab</a> of <a href="https://inf.ethz.ch/">ETH Zurich</a>, where I was advised by <a href="https://www.sri.inf.ethz.ch/people/martin">Martin Vechev</a>. I did my undergraduate at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.
               </p>
               <p style="text-align:center">
-                <a href="mailto:jingxuan.he@berkeley.edu">Email</a> &nbsp;/&nbsp;
+                何静轩 &nbsp;/&nbsp;
+                jingxuan.he [at] berkeley.edu &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=ylHZY58AAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
                 <a href="https://x.com/jingxuan_he">Twitter</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/jingxuanhe/">LinkedIn</a>
+                <br>
               </p>
             </td>
             <td style="padding:2.5%;width:28%;max-width:28%">
@@ -64,36 +67,41 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <td style="padding-left:2.5%;padding-bottom:3%;width:75%;vertical-align:middle">
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
 
               <br>
               <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+              {% if post.award %}
+                &nbsp; <h3><font color="red">({{post.award}})</font></h3>
+              {% endif %}
+              {% if post.venue1 %}
+                <br><em>{{post.venue1}}</em>, {{ post.date1 | date: "%Y" }}
+                {% if post.award1 %}
+                  &nbsp; <h3><font color="red">({{post.award1}})</font></h3>
+                {% endif %}
+              {% endif %}
               <br>
               {% if post.paper %}
               <a href="{{post.paper}}">paper</a> /
               {% endif %}
-              {% if post.video %}
-              <a href="{{post.video}}">video</a> /
-              {% endif %}
               {% if post.code %}
               <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
               {% endif %}
               {% if post.website %}
               <a href="{{post.website}}">website</a> /
               {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}">youtube</a> /
+              {% if post.talk %}
+              <a href="{{post.talk}}">talk</a> /
               {% endif %}
-              <p></p>
+              {% if post.slides %}
+              <a href="{{post.slides}}">slides</a> /
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}">poster</a> /
+              {% endif %}
               {{ post.excerpt }}
             </td>
           </tr>
@@ -104,6 +112,21 @@
         <br>
         <br>
         <br>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr>
+              <td style="padding:2.5%;width:100%;vertical-align:middle">
+                <h2>Awards</h2>
+                <p>
+                  <ul>
+                    <li>ETH Medal for Oustanding Doctoral Thesis, 2024</li>
+                    <li>ACM CCS Distinguished Paper Award, 2023</li>
+                    <li>NeurIPS Top Reviewer, 2023</li>
+                  </ul>
+                </p>
+              </td>
+            </tr>
+          </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>

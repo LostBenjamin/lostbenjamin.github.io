@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Exploiting LLM Quantization"
+date: 2024-12-02
+categories: research
+authors: "Kazuki Egashira, Mark Vero, Robin Staab, <u>Jingxuan He</u>, Martin Vechev"
+venue: "Neural Information Processing Systems (NeurIPS)"
+venue1: "ICML Workshop on the Next Generation of AI Safety"
+award1: "Oral"
+date1: 2024-07-01
+paper: https://arxiv.org/pdf/2405.18137
+code: https://github.com/eth-sri/llm-quantization-attack
+website: https://llm-quantization-attack.org/
+---

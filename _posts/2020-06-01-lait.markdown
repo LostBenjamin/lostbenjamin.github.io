@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Learning Fast and Precise Numerical Analysis"
+date: 2020-06-01
+categories: research
+authors: "<u>Jingxuan He</u>, Gagandeep Singh, Markus Püschel, Martin Vechev"
+venue: "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)"
+paper: pdfs/pldi20-lait.pdf
+code: https://github.com/eth-sri/ELINA/blob/master/README_lait.md
+talk: https://www.youtube.com/watch?v=ObkjUoA7yho
+slides: pdfs/pldi2020-lait-slides.pdf
+---

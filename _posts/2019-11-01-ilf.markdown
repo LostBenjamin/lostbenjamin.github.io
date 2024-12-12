@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Learning to Fuzz from Symbolic Execution with Application to Smart Contracts"
+date: 2019-11-01
+categories: research
+authors: "<u>Jingxuan He</u>, Mislav Balunović, Nodar Ambroladze, Petar Tsankov, Martin Vechev"
+venue: "ACM Conference on Computer and Communications Security (CCS)"
+paper: pdfs/ccs19-ilf.pdf
+code: https://github.com/eth-sri/ilf
+talk: https://dl.acm.org/doi/10.1145/3319535.3363230#sec-supp
+slides: pdfs/ccs19-ilf-slides.pdf
+---

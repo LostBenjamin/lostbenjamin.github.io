@@ -1,0 +1,11 @@
+---
+layout: post
+title: "SWT-Bench: Testing and Validating Real-World Bug-Fixes with Code Agents"
+date: 2024-12-01
+categories: research
+authors: "Niels Mündler, Mark Niklas Müller, <u>Jingxuan He</u>, Martin Vechev"
+venue: "Neural Information Processing Systems (NeurIPS)"
+paper: https://arxiv.org/pdf/2406.12952
+code: https://github.com/logic-star-ai/swt-bench
+poster: pdfs/neurips24-swt-poster.pdf
+---

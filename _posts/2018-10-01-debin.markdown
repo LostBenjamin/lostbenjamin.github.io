@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "DEBIN: Predicting Debug Information in Stripped Binaries"
+title: "DeBin: Predicting Debug Information in Stripped Binaries"
 date: 2018-10-01
-image:
 categories: research
-author: "Jingxuan He"
 authors: "<u>Jingxuan He</u>, Pesho Ivanov, Petar Tsankov, Veselin Raychev, Martin Vechev"
-venue: "ACM CCS"
+venue: "ACM Conference on Computer and Communications Security (CCS)"
 paper: pdfs/ccs18-debin.pdf
 code: https://github.com/eth-sri/debin
-website:
+talk: https://www.youtube.com/watch?v=x1x_KtS-5Hs
+slides: pdfs/ccs18-debin-slides.pdf
 ---

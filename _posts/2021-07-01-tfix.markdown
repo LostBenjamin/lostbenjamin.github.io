@@ -1,0 +1,12 @@
+---
+layout: post
+title: "TFix: Learning to Fix Coding Errors with a Text-to-Text Transformer"
+date: 2021-07-01
+categories: research
+authors: "Berkay Berabi, <u>Jingxuan He</u>, Veselin Raychev, Martin Vechev"
+venue: "International Conference on Machine Learning (ICML)"
+paper: pdfs/icml21-tfix.pdf
+code: https://github.com/eth-sri/TFix
+talk: https://icml.cc/virtual/2021/poster/8789
+slides: pdfs/icml21-tfix-slides.pdf
+---

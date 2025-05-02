@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Mind the Gap: A Practical Attack on GGUF Quantization"
+date: 2025-06-02
+categories: research
+authors: "Kazuki Egashira, Robin Staab, Mark Vero, <u>Jingxuan He</u>, Martin Vechev"
+venue: "International Conference on Machine Learning (ICML)"
+venue1: "ICLR 2025 Workshop on Building Trust in Language Models and Applications"
+award1: "Oral"
+date1: 2025-04-01
+---

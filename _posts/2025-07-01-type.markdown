@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Type-Constrained Code Generation with Language Models"
+date: 2025-07-01
+categories: research
+authors: "Niels Mündler*, <u>Jingxuan He</u>*, Hao Wang, Koushik Sen, Dawn Song, Martin Vechev"
+venue: "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)"
+paper: https://arxiv.org/pdf/2504.09246
+code: https://github.com/eth-sri/type-constrained-code-generation
+---

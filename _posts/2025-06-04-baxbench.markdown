@@ -1,0 +1,13 @@
+---
+layout: post
+title: "BaxBench: Can LLMs Generate Secure and Correct Backends?"
+date: 2025-06-04
+categories: research
+authors: "Mark Vero, Niels Mündler, Victor Chibotaru, Veselin Raychev, Maximilian Baader, Nikola Jovanović, <u>Jingxuan He</u>, Martin Vechev"
+venue: "International Conference on Machine Learning (ICML)"
+award: "Spotlight"
+paper: https://arxiv.org/pdf/2502.11844
+website: https://baxbench.com/
+code: https://github.com/logic-star-ai/baxbench
+dataset: https://huggingface.co/datasets/LogicStar/BaxBench
+---

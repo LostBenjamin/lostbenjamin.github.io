@@ -8,4 +8,5 @@ venue: "Neural Information Processing Systems (NeurIPS)"
 paper: https://arxiv.org/pdf/2406.12952
 code: https://github.com/logic-star-ai/swt-bench
 poster: pdfs/neurips24-swt-poster.pdf
+topic: ml
 ---

@@ -9,4 +9,5 @@ paper: pdfs/ccs18-debin.pdf
 code: https://github.com/eth-sri/debin
 talk: https://www.youtube.com/watch?v=x1x_KtS-5Hs
 slides: pdfs/ccs18-debin-slides.pdf
+topic: security
 ---

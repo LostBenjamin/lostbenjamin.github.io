@@ -9,4 +9,5 @@ paper: pdfs/pldi20-lait.pdf
 code: https://github.com/eth-sri/ELINA/blob/master/README_lait.md
 talk: https://www.youtube.com/watch?v=ObkjUoA7yho
 slides: pdfs/pldi2020-lait-slides.pdf
+topic: pl
 ---

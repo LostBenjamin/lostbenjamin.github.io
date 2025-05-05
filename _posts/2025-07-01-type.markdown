@@ -8,4 +8,5 @@ venue: "ACM SIGPLAN Conference on Programming Language Design and Implementation
 paper: https://arxiv.org/pdf/2504.09246
 code: https://github.com/eth-sri/type-constrained-code-generation
 highlight: true
+topic: pl
 ---

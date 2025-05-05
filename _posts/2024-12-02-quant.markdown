@@ -11,4 +11,5 @@ date1: 2024-07-01
 paper: https://arxiv.org/pdf/2405.18137
 code: https://github.com/eth-sri/llm-quantization-attack
 website: https://llm-quantization-attack.org/
+topic: ml
 ---

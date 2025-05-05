@@ -11,4 +11,5 @@ website: https://baxbench.com/
 code: https://github.com/logic-star-ai/baxbench
 dataset: https://huggingface.co/datasets/LogicStar/BaxBench
 highlight: true
+topic: ml
 ---

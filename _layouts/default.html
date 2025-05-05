@@ -40,6 +40,47 @@
     span.highlight {
       background-color: #e6f2ff;
     }
+
+    .topic-button-group {
+      text-align: left;
+      margin: 0;
+    }
+
+    .topic-filter {
+      display: inline-block;
+      margin: 2px 4px;
+      padding: 4px 6px;
+      font-family: "Lato", sans-serif;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  
+    .topic-filter:hover {
+      background-color: #e0e0e0;
+      border-color: #999;
+    }
+  
+    .topic-filter.active {
+      background-color: #d0d0d0;
+      font-weight: bold;
+      border-color: #666;
+    }
+
+    .topic-selector {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin: 0;
+      gap: 10px;
+    }
+    
+    .topic-selector p {
+      margin: 0;
+    }
   </style>
 </head>
 
@@ -94,6 +135,15 @@
               <p style="text-align: justify;">
                 I am broadly interested in security, programming languages, and machine learning. My recent research focuses on enhancing the security of AI-generated code, utilizing learning-based techniques that improve AI's security reasoning and formal methods that provide rigorous guarantees (<span class="highlight">see highlighted papers</span>). I also work on related topics, including AI for programming and AI safety.
               </p>
+              <div class="topic-selector">
+                <p>You can selectively view my papers based on the topic of the published venue:</p>
+                <div class="topic-button-group">
+                  <button class="topic-filter active" onclick="filterPosts('all', this)">All</button>
+                  <button class="topic-filter" onclick="filterPosts('security', this)">Security</button>
+                  <button class="topic-filter" onclick="filterPosts('ml', this)">ML</button>
+                  <button class="topic-filter" onclick="filterPosts('pl', this)">PL</button>
+                </div>
+              </div>
             </td>
           </tr>
         </table>
@@ -102,7 +152,7 @@
           {% for post in site.posts %}
           {% for cat in post.categories %}
           {% if cat == 'research' %}
-          <tr>
+          <tr data-topic="{{ post.topic }}">
             <td class="{% if post.highlight %}highlight-td{% else %}normal-td{% endif %}" style="width:75%;vertical-align:middle">
               <div class="{% if post.highlight %}highlight-div{% endif %}">
                 <h3>{{post.title}}</h3>
@@ -161,6 +211,28 @@
       </td>
     </tr>
   </table>
+  <script>
+    function filterPosts(topic, button) {
+      // Remove 'active' class from all buttons
+      const buttons = document.querySelectorAll('.topic-filter');
+      buttons.forEach(btn => btn.classList.remove('active'));
+  
+      // Add 'active' class to the clicked button
+      button.classList.add('active');
+  
+      // Show/hide posts based on topic
+      const posts = document.querySelectorAll('tr[data-topic]');
+      posts.forEach(post => {
+        const postTopic = post.getAttribute('data-topic');
+  
+        if (topic === 'all' || postTopic === topic) {
+          post.style.display = '';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

@@ -8,4 +8,5 @@ venue: "International Conference on Learning Representations (ICLR)"
 paper: https://arxiv.org/pdf/2305.15852
 code: https://github.com/eth-sri/ChatProtect
 website: https://chatprotect.ai
+topic: ml
 ---

@@ -9,4 +9,5 @@ award: "Distinguished Paper"
 paper: https://arxiv.org/pdf/2302.05319
 code: https://github.com/eth-sri/sven
 slides: pdfs/ccs23-sven-slides.pdf
+highlight: true
 ---

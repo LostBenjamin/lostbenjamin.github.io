@@ -10,4 +10,5 @@ paper: https://arxiv.org/pdf/2502.11844
 website: https://baxbench.com/
 code: https://github.com/logic-star-ai/baxbench
 dataset: https://huggingface.co/datasets/LogicStar/BaxBench
+highlight: true
 ---

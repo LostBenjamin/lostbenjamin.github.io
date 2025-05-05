@@ -7,4 +7,5 @@ authors: "Niels Mündler*, <u>Jingxuan He</u>*, Hao Wang, Koushik Sen, Dawn Song
 venue: "ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)"
 paper: https://arxiv.org/pdf/2504.09246
 code: https://github.com/eth-sri/type-constrained-code-generation
+highlight: true
 ---

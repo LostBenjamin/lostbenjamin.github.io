@@ -22,6 +22,25 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏄‍♂️</text></svg>">
+
+  <style>
+    .highlight-td {
+      padding: 4px 0% 4px 0%;
+    }
+
+    .normal-td {
+      padding: 14px 1.5% 14px 1.5%;
+    }
+
+    .highlight-div {
+      background-color: #e6f2ff;
+      padding: 10px 1.5% 10px 1.5%;
+    }
+
+    span.highlight {
+      background-color: #e6f2ff;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,11 +49,12 @@
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
+            <td style="padding:1.5%;width:60%;vertical-align:middle">
               <h1>
                 Jingxuan He
               </h1>
-              <p>I am a PostDoc at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, working with <a href="https://dawnsong.io/">Dawn Song</a>. I received my PhD from <a href="https://www.sri.inf.ethz.ch/">the SRI Lab</a> of <a href="https://inf.ethz.ch/">ETH Zurich</a>, where I was advised by <a href="https://www.sri.inf.ethz.ch/people/martin">Martin Vechev</a>. I did my undergraduate at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.
+              <p style="text-align: justify;">
+                I am a PostDoc at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, working with <a href="https://dawnsong.io/">Dawn Song</a>. I received my PhD from <a href="https://www.sri.inf.ethz.ch/">the SRI Lab</a> of <a href="https://inf.ethz.ch/">ETH Zurich</a>, where I was advised by <a href="https://www.sri.inf.ethz.ch/people/martin">Martin Vechev</a>. I did my undergraduate at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.
               </p>
               <p style="text-align:center">
                 何静轩 &nbsp;/&nbsp;
@@ -45,18 +65,34 @@
                 <br>
               </p>
             </td>
-            <td style="padding:2.5%;width:28%;max-width:28%">
+            <td style="padding:1.5%;width:22%;max-width:22%">
               <img style="width:100%;max-width:100%" alt="profile photo" src="images/jingxuan.jpg">
             </td>
           </tr>
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tr>
+              <td style="padding:1.5%;width:100%;vertical-align:middle">
+                <h2>Honors and Awards</h2>
+                <p>
+                  <ul>
+                    <li>Two Spotlight Papers at ICML 2025</li>
+                    <li>ETH Medal for Oustanding Doctoral Thesis, 2024</li>
+                    <li>ACM CCS Distinguished Paper Award, 2023</li>
+                    <li>NeurIPS Top Reviewer, 2023</li>
+                  </ul>
+                </p>
+              </td>
+            </tr>
+          </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
+            <td style="padding:1.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
-              <p>
-                I am interested in computer security, programming language, and machine learning.
+              <p style="text-align: justify;">
+                I am broadly interested in security, programming languages, and machine learning. My recent research focuses on enhancing the security of AI-generated code, utilizing learning-based techniques that improve AI's security reasoning and formal methods that provide rigorous guarantees (<span class="highlight">see highlighted papers</span>). I also work on related topics, including AI for programming and AI safety.
               </p>
             </td>
           </tr>
@@ -67,66 +103,50 @@
           {% for cat in post.categories %}
           {% if cat == 'research' %}
           <tr>
-            <td style="padding-left:2.5%;padding-bottom:3%;width:75%;vertical-align:middle">
-              <h3>{{post.title}}</h3>
-              <br>
-              {{post.authors}}
+            <td class="{% if post.highlight %}highlight-td{% else %}normal-td{% endif %}" style="width:75%;vertical-align:middle">
+              <div class="{% if post.highlight %}highlight-div{% endif %}">
+                <h3>{{post.title}}</h3>
+                <br>
+                {{post.authors}}
 
-              <br>
-              <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-              {% if post.award %}
-                &nbsp; <h3><font color="red">({{post.award}})</font></h3>
-              {% endif %}
-              {% if post.venue1 %}
-                <br><em>{{post.venue1}}</em>, {{ post.date1 | date: "%Y" }}
-                {% if post.award1 %}
-                  &nbsp; <h3><font color="red">({{post.award1}})</font></h3>
+                <br>
+                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
+                {% if post.award %}
+                  &nbsp; <h3><font color="red">({{post.award}})</font></h3>
                 {% endif %}
-              {% endif %}
-              <br>
-              {% if post.paper %}
-              <a href="{{post.paper}}">paper</a> /
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}">code</a> /
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}">website</a> /
-              {% endif %}
-              {% if post.talk %}
-              <a href="{{post.talk}}">talk</a> /
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}">slides</a> /
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}">poster</a> /
-              {% endif %}
-              {{ post.excerpt }}
+                {% if post.venue1 %}
+                  <br><em>{{post.venue1}}</em>, {{ post.date1 | date: "%Y" }}
+                  {% if post.award1 %}
+                    &nbsp; <h3><font color="red">({{post.award1}})</font></h3>
+                  {% endif %}
+                {% endif %}
+                <br>
+                {% if post.paper %}
+                <a href="{{post.paper}}">paper</a> /
+                {% endif %}
+                {% if post.code %}
+                <a href="{{post.code}}">code</a> /
+                {% endif %}
+                {% if post.website %}
+                <a href="{{post.website}}">website</a> /
+                {% endif %}
+                {% if post.talk %}
+                <a href="{{post.talk}}">talk</a> /
+                {% endif %}
+                {% if post.slides %}
+                <a href="{{post.slides}}">slides</a> /
+                {% endif %}
+                {% if post.poster %}
+                <a href="{{post.poster}}">poster</a> /
+                {% endif %}
+                {{ post.excerpt }}
+              </div>
             </td>
           </tr>
           {% endif %}
           {% endfor %}
           {% endfor %}
         </table>
-        <br>
-        <br>
-        <br>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr>
-              <td style="padding:2.5%;width:100%;vertical-align:middle">
-                <h2>Awards</h2>
-                <p>
-                  <ul>
-                    <li>ETH Medal for Oustanding Doctoral Thesis, 2024</li>
-                    <li>ACM CCS Distinguished Paper Award, 2023</li>
-                    <li>NeurIPS Top Reviewer, 2023</li>
-                  </ul>
-                </p>
-              </td>
-            </tr>
-          </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>

@@ -1,0 +1,16 @@
+---
+layout: post
+title: "CyberGym: Evaluating AI Agents' Cybersecurity Capabilities with Real-World Vulnerabilities at Scale"
+date: 2025-08-01
+categories: research
+authors: "Zhun Wang, Tianneng Shi, <u>Jingxuan He</u>, Matthew Cai, Jialin Zhang, Dawn Song"
+venue: "Preprint arXiv:2506.02548"
+award: "Adopted by Anthropic to evalute Claude Sonnet 4.5"
+awardlink: "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf"
+paper: https://arxiv.org/pdf/2506.02548
+website: https://www.cybergym.io/
+code: https://github.com/sunblaze-ucb/cybergym
+dataset: https://huggingface.co/datasets/sunblaze-ucb/cybergym
+highlight: true
+topic: ml
+---

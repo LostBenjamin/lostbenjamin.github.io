@@ -133,7 +133,7 @@
             <td style="padding:1.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p style="text-align: justify;">
-                I am broadly interested in security, machine learning, and programming languages. My recent research focuses on enhancing the security of AI-generated code, utilizing learning-based techniques that improve AI's security reasoning and formal methods that provide rigorous guarantees (<span class="highlight">see highlighted papers</span>). I also work on related topics, including AI for programming and AI safety.
+                I am broadly interested in security, machine learning, and programming languages. My recent research focuses on developing novel approaches to evaluate AI's impact in cybersecurity and mitigate associated risks (<span class="highlight">see highlighted papers</span>). I also work on related topics, including AI for programming and AI safety.
               </p>
               <div class="topic-selector">
                 <p>You can selectively view my publications by the focused area of the venue:</p>
@@ -162,7 +162,9 @@
                 <br>
                 <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
                 {% if post.award %}
-                  &nbsp; <h3><font color="red">({{post.award}})</font></h3>
+                <!-- {% if post.awardlink %}<a href="{{post.awardlink}}">{% endif %} -->
+                    <!-- {% if post.awardlink %}</a>{% endif %} -->
+                  &nbsp; <h3><font color="red">({{post.award}}{% if post.awardlink %}: <a href="{{post.awardlink}}" style="color:red">link</a>{% endif %})</font></h3>
                 {% endif %}
                 {% if post.venue1 %}
                   <br><em>{{post.venue1}}</em>, {{ post.date1 | date: "%Y" }}

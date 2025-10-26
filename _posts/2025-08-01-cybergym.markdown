@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CyberGym: Evaluating AI Agents' Cybersecurity Capabilities with Real-World Vulnerabilities at Scale"
+title: "CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale"
 date: 2025-08-01
 categories: research
 authors: "Zhun Wang, Tianneng Shi, <u>Jingxuan He</u>, Matthew Cai, Jialin Zhang, Dawn Song"

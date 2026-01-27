@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "CyberGym: Evaluating AI Agents' Real-World Cybersecurity Capabilities at Scale"
-date: 2025-08-01
+date: 2026-04-02
 categories: research
 authors: "Zhun Wang, Tianneng Shi, <u>Jingxuan He</u>, Matthew Cai, Jialin Zhang, Dawn Song"
-venue: "Preprint arXiv:2506.02548"
-award: "Adopted in Anthropic's Claude Sonnet 4.5 System Card"
+venue: "International Conference on Learning Representations (ICLR)"
+award: "Adopted by Anthropic"
 awardlink: "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf"
 paper: https://arxiv.org/pdf/2506.02548
 website: https://www.cybergym.io/

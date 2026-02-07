@@ -5,8 +5,7 @@ date: 2026-04-01
 categories: research
 authors: "Zhe Ye, Zhengxu Yan, <u>Jingxuan He</u>, Timothe Kasriel, Kaiyu Yang, Dawn Song"
 venue: "International Conference on Learning Representations (ICLR)"
-award: "Adopted by Harmonic"
-awardlink: "https://harmonic.fun/news#blog-post-verina-bench-sota"
+award: "(Adopted by Harmonic: <a href='https://harmonic.fun/news#blog-post-verina-bench-sota' style='color:red'>link</a>)"
 paper: https://arxiv.org/pdf/2505.23135
 website: https://verina.io/
 code: https://github.com/sunblaze-ucb/verina

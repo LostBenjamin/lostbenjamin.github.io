@@ -5,7 +5,7 @@ date: 2025-06-03
 categories: research
 authors: "Kaiyu Yang, Gabriel Poesia, <u>Jingxuan He</u>, Wenda Li, Kristin Lauter, Swarat Chaudhuri, Dawn Song"
 venue: "International Conference on Machine Learning (ICML)"
-award: "Spotlight"
+award: "(Spotlight)"
 paper: https://arxiv.org/pdf/2412.16075
 highlight: true
 topic: ml

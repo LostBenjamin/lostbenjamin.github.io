@@ -5,8 +5,7 @@ date: 2026-04-02
 categories: research
 authors: "Zhun Wang, Tianneng Shi, <u>Jingxuan He</u>, Matthew Cai, Jialin Zhang, Dawn Song"
 venue: "International Conference on Learning Representations (ICLR)"
-award: "Adopted by Anthropic"
-awardlink: "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf"
+award: "(Oral) &nbsp; (Adopted by Anthropic: <a href='https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf' style='color:red'>link</a>)"
 paper: https://arxiv.org/pdf/2506.02548
 website: https://www.cybergym.io/
 code: https://github.com/sunblaze-ucb/cybergym

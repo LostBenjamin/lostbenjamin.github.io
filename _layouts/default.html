@@ -191,6 +191,12 @@
                 {% if post.poster %}
                 <a href="{{post.poster}}">poster</a> /
                 {% endif %}
+                {% if post.icml %}
+                <a href="{{post.icml}}">ICML paper</a> /
+                {% endif %}
+                {% if post.cacm %}
+                <a href="{{post.cacm}}">CACM paper</a> /
+                {% endif %}
                 {{ post.excerpt }}
               </div>
             </td>

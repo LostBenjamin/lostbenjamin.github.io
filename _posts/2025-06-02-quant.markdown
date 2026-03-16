@@ -9,4 +9,6 @@ venue1: "ICLR 2025 Workshop on Building Trust in Language Models and Application
 award1: "(Oral)"
 date1: 2025-04-01
 topic: ml
+paper: https://arxiv.org/pdf/2505.23786
+code: https://github.com/eth-sri/llm-quantization-attack
 ---

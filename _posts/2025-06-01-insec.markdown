@@ -7,4 +7,6 @@ authors: "Slobodan Jenko*, Niels Mündler*, <u>Jingxuan He</u>, Mark Vero, Marti
 venue: "International Conference on Machine Learning (ICML)"
 highlight: true
 topic: ml
+paper: https://arxiv.org/pdf/2408.02509
+code: https://github.com/eth-sri/insec
 ---

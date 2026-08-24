@@ -1,0 +1,54 @@
+<tr class="paper-row">
+  <td class="normal-td" style="width:75%;vertical-align:middle">
+    <div>
+      <h3>{{ include.post.title }}</h3>
+      <br>
+      {{ include.post.authors }}
+      <br>
+      {{ include.post.venue }}, {{ include.post.date | date: "%Y" }}
+      {% if include.post.award %}
+        &nbsp; <span class="paper-award">{{ include.post.award }}</span>
+      {% endif %}
+      {% if include.post.venue1 %}
+        <br>{{ include.post.venue1 }}, {{ include.post.date1 | date: "%Y" }}
+        {% if include.post.award1 %}
+          &nbsp; <span class="paper-award">{{ include.post.award1 }}</span>
+        {% endif %}
+      {% endif %}
+      {% if include.post.coverage %}
+        <br><span class="paper-coverage">{{ include.post.coverage }}</span>
+      {% endif %}
+      <br>
+      <span class="paper-links">
+      {% if include.post.paper %}
+      <span class="paper-link"><a href="{{ include.post.paper }}">paper</a></span>
+      {% endif %}
+      {% if include.post.code %}
+      <span class="paper-link"><a href="{{ include.post.code }}">code</a></span>
+      {% endif %}
+      {% if include.post.website %}
+      <span class="paper-link"><a href="{{ include.post.website }}">website</a></span>
+      {% endif %}
+      {% if include.post.dataset %}
+      <span class="paper-link"><a href="{{ include.post.dataset }}">dataset</a></span>
+      {% endif %}
+      {% if include.post.talk %}
+      <span class="paper-link"><a href="{{ include.post.talk }}">talk</a></span>
+      {% endif %}
+      {% if include.post.slides %}
+      <span class="paper-link"><a href="{{ include.post.slides }}">slides</a></span>
+      {% endif %}
+      {% if include.post.poster %}
+      <span class="paper-link"><a href="{{ include.post.poster }}">poster</a></span>
+      {% endif %}
+      {% if include.post.icml %}
+      <span class="paper-link"><a href="{{ include.post.icml }}">ICML paper</a></span>
+      {% endif %}
+      {% if include.post.cacm %}
+      <span class="paper-link"><a href="{{ include.post.cacm }}">CACM paper</a></span>
+      {% endif %}
+      </span>
+      {{ include.post.excerpt }}
+    </div>
+  </td>
+</tr>

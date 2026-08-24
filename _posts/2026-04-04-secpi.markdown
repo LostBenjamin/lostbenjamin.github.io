@@ -1,0 +1,11 @@
+---
+layout: post
+title: "SecPI: Secure Code Generation with Reasoning Models via Security Reasoning Internalization"
+date: 2026-04-04
+categories: research
+authors: "Hao Wang, Niels Mündler, Mark Vero, <u>Jingxuan He</u>, Dawn Song, Martin Vechev"
+venue: "arXiv preprint"
+publication_type: workshop-preprint
+paper: https://arxiv.org/pdf/2604.03587
+code: https://github.com/moogician/SecPI
+---

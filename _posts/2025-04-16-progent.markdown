@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Progent: Securing AI Agents with Privilege Control"
+date: 2025-04-16
+categories: research
+authors: "Tianneng Shi, <u>Jingxuan He</u>, Zhun Wang, Hongwei Li, Linyu Wu, Wenbo Guo, Dawn Song"
+venue: "arXiv preprint"
+publication_type: workshop-preprint
+paper: https://arxiv.org/pdf/2504.11703
+code: https://github.com/sunblaze-ucb/progent
+---

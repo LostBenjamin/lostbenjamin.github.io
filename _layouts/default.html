@@ -24,31 +24,24 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏄‍♂️</text></svg>">
 
   <style>
-    .highlight-td {
-      padding: 4px 0% 4px 0%;
-    }
-
     .normal-td {
-      padding: 14px 1.5% 14px 1.5%;
+      padding: 10.5px 1.5%;
     }
 
-    .highlight-div {
-      background-color: #e6f2ff;
-      padding: 10px 1.5% 10px 1.5%;
+    .publications-heading {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
-    span.highlight {
-      background-color: #e6f2ff;
+    .paper-mode-group {
+      display: inline-flex;
     }
 
-    .topic-button-group {
-      text-align: left;
-      margin: 0;
-    }
-
-    .topic-filter {
+    .paper-mode-filter {
       display: inline-block;
-      margin: 2px 4px;
+      margin: 2px 0;
       padding: 4px 6px;
       font-family: "Lato", sans-serif;
       background-color: #f2f2f2;
@@ -57,35 +50,61 @@
       cursor: pointer;
       transition: all 0.2s ease-in-out;
     }
-  
-    .topic-filter:hover {
+
+    .paper-mode-filter:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .paper-mode-filter:last-child {
+      margin-left: -1px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .paper-mode-filter:hover {
       background-color: #e0e0e0;
       border-color: #999;
     }
-  
-    .topic-filter.active {
+
+    .paper-mode-filter.active {
       background-color: #d0d0d0;
       font-weight: bold;
       border-color: #666;
     }
 
-    .topic-selector {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-wrap: wrap;
-      margin: 0;
-      gap: 10px;
+    .paper-group-title {
+      display: block;
+      margin: 18px 1.5% 4px;
+      font-size: 17px;
     }
-    
-    .topic-selector p {
-      margin: 0;
+
+    .paper-coverage {
+      font-style: italic;
+    }
+
+    .paper-award,
+    .paper-award a {
+      color: #7b2cbf;
+      font-weight: 700;
+    }
+
+    .paper-award a:hover {
+      color: #4f1685;
+    }
+
+    .paper-link + .paper-link::before {
+      content: " / ";
+      color: #000;
+      font-weight: 400;
+    }
+
+    [hidden] {
+      display: none !important;
     }
   </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:880px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <table style="width:100%;max-width:920px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -95,14 +114,17 @@
                 Jingxuan He
               </h1>
               <p style="text-align: justify;">
-                I am a PostDoc at <a href="https://eecs.berkeley.edu/">UC Berkeley</a>, working with <a href="https://dawnsong.io/">Dawn Song</a>. I received my PhD from <a href="https://www.sri.inf.ethz.ch/">the SRI Lab</a> of <a href="https://inf.ethz.ch/">ETH Zurich</a>, where I was advised by <a href="https://www.sri.inf.ethz.ch/people/martin">Martin Vechev</a>. I did my undergraduate at <a href="https://www.zju.edu.cn/english/">Zhejiang University</a>.
+                I am an incoming <a href="https://careeraidhub.com/nanyang-assistant-associate-professorship-nap-at-ntu/">Nanyang Assistant Professor</a> at <a href="https://www.ntu.edu.sg/">Nanyang Technological University (NTU)</a> in Singapore, starting in Fall 2027.
+                Currently, I am a Visiting Researcher at NVIDIA Research, based in the SF Bay Area and hosted by Edward Suh.
+              </p>
+              <p style="text-align: justify;">
+                Previously, I was a PostDoc at UC Berkeley, working with Dawn Song. I received my PhD from ETH Zurich, advised by Martin Vechev. I finished my undergraduate at Zhejiang University.
               </p>
               <p style="text-align:center">
                 何静轩 &nbsp;/&nbsp;
                 jingxuan.he [at] berkeley.edu &nbsp;/&nbsp;
-                <a href="pdfs/cv.pdf">CV</a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=ylHZY58AAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
-                <a href="https://x.com/jingxuan_he">Twitter</a> &nbsp;/&nbsp;
+                <a href="https://x.com/jingxuan_he">X</a> &nbsp;/&nbsp;
                 <a href="https://www.linkedin.com/in/jingxuanhe/">LinkedIn</a>
                 <br>
               </p>
@@ -114,97 +136,124 @@
         </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tr>
-              <td style="padding:1.5%;width:100%;vertical-align:middle">
-                <h2>Honors and Awards</h2>
-                <p>
-                  <ul>
-                    <li>Oral Paper at ICLR 2026</li>
-                    <li>Two Spotlight Papers at ICML 2025</li>
-                    <li>ETH Medal for Oustanding Doctoral Thesis, 2024</li>
-                    <li>ACM CCS Distinguished Paper Award, 2023</li>
-                    <li>NeurIPS Top Reviewer, 2023</li>
-                  </ul>
-                </p>
-              </td>
-            </tr>
-          </table>
+          <tr>
+            <td style="padding:1.5%;width:100%;vertical-align:middle">
+              <h2>Recruitment</h2>
+              <p style="text-align: justify;">
+                I am looking for motivated PhD students, Postdocs, visiting students, and research assistants to join my group at NTU starting in Fall 2027. If you are interested or see a potential fit, I encourage you to apply by filling out <a href='https://docs.google.com/forms/d/e/1FAIpQLSfqWiPLTJbIaZNMjj6eTUSoen2EXtZn7nCXXHbtb4PPqMFPcw/viewform?usp=publish-editor'>this form</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:1.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
-              <p style="text-align: justify;">
-                I study how AI reshapes the cybersecurity landscape (<span class="highlight">see highlighted papers</span>). To this end, I build systematic benchmarks to measure AI's cybersecurity capabilities and risks, and I develop secure-by-design techniques that prevent AI from generating vulnerable code. My research draws on and contributes to AI, security, programming languages, and software engineering.
+              <p style="text-align: justify;margin-bottom:0.6em;">
+                My research spans AI, programming languages, and security. I seek to answer a key question: <em>How does AI reshape programming?</em>
               </p>
-              <div class="topic-selector">
-                <p>You can selectively view my publications by the focused area of the venue:</p>
-                <div class="topic-button-group">
-                  <button class="topic-filter active" onclick="filterPosts('all', this)">All</button>
-                  <button class="topic-filter" onclick="filterPosts('security', this)">Security</button>
-                  <button class="topic-filter" onclick="filterPosts('ml', this)">ML</button>
-                  <button class="topic-filter" onclick="filterPosts('pl', this)">PL</button>
+              <ul style="margin:0 0 1em 0;padding-left:1em;list-style-position:outside;">
+                <li style="text-align: justify;margin-bottom:0.6em;">
+                    <em>Security is a direct motivation.</em> AI is becoming ever more capable of discovering and exploiting vulnerabilities, yet it keeps introducing them into the code it generates. My work has demonstrated these risks at scale and is widely used by the frontier AI industry (<a href="https://arxiv.org/pdf/2506.02548">CyberGym</a>, <a href="https://arxiv.org/pdf/2605.11086">ExploitGym</a>, <a href="https://arxiv.org/pdf/2502.11844">BaxBench</a>).
+                </li>
+                <li style="text-align: justify;">
+                    <em>Guarantees by construction are my response.</em> AI can absorb much of the effort traditionally required by secure- or correct-by-construction techniques, such as adopting safer programming languages, making them practical at unprecedented scale. I therefore build these techniques and their guarantees into how AI generates code, via <a href="https://arxiv.org/pdf/2504.09246">typing</a>, <a href="https://arxiv.org/pdf/2607.13921">compilation</a>, <a href="https://arxiv.org/pdf/2505.23135">proofs</a>, and <a href="https://arxiv.org/pdf/2302.05319">training</a>.
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+                        <!-- <li style="text-align: justify;">
+                    <em>Guarantees by construction are how I respond.</em> As AI writes ever more of our code, the greatest leverage lies in preventing bugs before they exist, so my work builds security and correctness directly into generation, resulting in AI programmers whose output can be trusted by default. I achieve this, for example, via <a href="https://arxiv.org/pdf/2504.09246">typing</a>, <a href="https://arxiv.org/pdf/2607.13921">compilation</a>, <a href="https://arxiv.org/pdf/2302.05319">training</a>, and <a href="https://arxiv.org/pdf/2505.23135">proofs</a>.
+                </li> -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:1.5%;width:100%;vertical-align:middle">
+              <h2>Honors and Awards</h2>
+              <p>
+                <ul style="margin:0;padding-left:1em;list-style-position:outside;">
+                <li style="text-align: justify;">
+                    Oral Paper at ICLR 2026
+                </li>
+                <li style="text-align: justify;">
+                    Two Spotlight Papers at ICML 2025
+                </li>
+                <li style="text-align: justify;">
+                    ETH Medal for Oustanding Doctoral Thesis, 2024
+                </li>
+                <li style="text-align: justify;">
+                    ACM CCS Distinguished Paper Award, 2023
+                </li>
+                <li style="text-align: justify;">
+                    NeurIPS Top Reviewer, 2023
+                </li>
+                </ul>
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:1.5%;width:100%;vertical-align:middle">
+              <div class="publications-heading">
+                <h2>Publications</h2>
+                <div class="paper-mode-group" role="group" aria-label="Paper list">
+                  <button type="button" class="paper-mode-filter active" aria-pressed="true" onclick="selectPaperMode('selected', this)">Selected</button>
+                  <button type="button" class="paper-mode-filter" aria-pressed="false" onclick="selectPaperMode('all', this)">All</button>
                 </div>
               </div>
             </td>
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'research' %}
-          <tr data-topic="{{ post.topic }}">
-            <td class="{% if post.highlight %}highlight-td{% else %}normal-td{% endif %}" style="width:75%;vertical-align:middle">
-              <div class="{% if post.highlight %}highlight-div{% endif %}">
-                <h3>{{post.title}}</h3>
-                <br>
-                {{post.authors}}
+        <div id="selected-papers-view" class="paper-view">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            {% for post in site.posts %}
+            {% if post.categories contains 'research' and post.selected %}
+              {% include paper-row.html post=post %}
+            {% endif %}
+            {% endfor %}
+          </table>
+        </div>
 
-                <br>
-                <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }}
-                {% if post.award %}
-                  &nbsp; <h3><font color="red">{{post.award}}</font></h3>
-                {% endif %}
-                {% if post.venue1 %}
-                  <br><em>{{post.venue1}}</em>, {{ post.date1 | date: "%Y" }}
-                  {% if post.award1 %}
-                    &nbsp; <h3><font color="red">{{post.award1}}</font></h3>
-                  {% endif %}
-                {% endif %}
-                <br>
-                {% if post.paper %}
-                <a href="{{post.paper}}">paper</a> /
-                {% endif %}
-                {% if post.code %}
-                <a href="{{post.code}}">code</a> /
-                {% endif %}
-                {% if post.website %}
-                <a href="{{post.website}}">website</a> /
-                {% endif %}
-                {% if post.talk %}
-                <a href="{{post.talk}}">talk</a> /
-                {% endif %}
-                {% if post.slides %}
-                <a href="{{post.slides}}">slides</a> /
-                {% endif %}
-                {% if post.poster %}
-                <a href="{{post.poster}}">poster</a> /
-                {% endif %}
-                {% if post.icml %}
-                <a href="{{post.icml}}">ICML paper</a> /
-                {% endif %}
-                {% if post.cacm %}
-                <a href="{{post.cacm}}">CACM paper</a> /
-                {% endif %}
-                {{ post.excerpt }}
-              </div>
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
+        <div id="all-papers-view" class="paper-view" hidden>
+          <section class="paper-group">
+            <h3 class="paper-group-title">Recent Preprints</h3>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              {% for post in site.posts %}
+              {% if post.categories contains 'research' and post.publication_type == 'recent-preprint' %}
+                {% include paper-row.html post=post %}
+              {% endif %}
+              {% endfor %}
+            </table>
+          </section>
+
+          <section class="paper-group">
+            <h3 class="paper-group-title">Conference Publications</h3>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              {% for post in site.posts %}
+              {% if post.categories contains 'research' and post.publication_type != 'workshop-preprint' and post.publication_type != 'recent-preprint' %}
+                {% include paper-row.html post=post %}
+              {% endif %}
+              {% endfor %}
+            </table>
+          </section>
+
+          <section class="paper-group">
+            <h3 class="paper-group-title">Workshop Papers and Other Preprints</h3>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+              {% for post in site.posts %}
+              {% if post.categories contains 'research' and post.publication_type == 'workshop-preprint' %}
+                {% include paper-row.html post=post %}
+              {% endif %}
+              {% endfor %}
+            </table>
+          </section>
+        </div>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
@@ -220,28 +269,17 @@
     </tr>
   </table>
   <script>
-    function filterPosts(topic, button) {
-      // Remove 'active' class from all buttons
-      const buttons = document.querySelectorAll('.topic-filter');
-      buttons.forEach(btn => btn.classList.remove('active'));
-  
-      // Add 'active' class to the clicked button
-      button.classList.add('active');
-  
-      // Show/hide posts based on topic
-      const posts = document.querySelectorAll('tr[data-topic]');
-      posts.forEach(post => {
-        const postTopic = post.getAttribute('data-topic');
-  
-        if (topic === 'all' || postTopic === topic) {
-          post.style.display = '';
-        } else {
-          post.style.display = 'none';
-        }
+    function selectPaperMode(mode, button) {
+      document.querySelectorAll('.paper-mode-filter').forEach(btn => {
+        const isActive = btn === button;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive);
       });
+
+      document.getElementById('selected-papers-view').hidden = mode !== 'selected';
+      document.getElementById('all-papers-view').hidden = mode !== 'all';
     }
   </script>
 </body>
 
 </html>
-

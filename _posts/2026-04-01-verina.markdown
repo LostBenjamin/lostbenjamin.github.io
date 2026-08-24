@@ -5,11 +5,10 @@ date: 2026-04-01
 categories: research
 authors: "Zhe Ye, Zhengxu Yan, <u>Jingxuan He</u>, Timothe Kasriel, Kaiyu Yang, Dawn Song"
 venue: "International Conference on Learning Representations (ICLR)"
-award: "(Adopted by Harmonic: <a href='https://harmonic.fun/news#blog-post-verina-bench-sota' style='color:red'>link</a>)"
 paper: https://arxiv.org/pdf/2505.23135
 website: https://verina.io/
 code: https://github.com/sunblaze-ucb/verina
 dataset: https://huggingface.co/datasets/sunblaze-ucb/verina
-highlight: true
-topic: ml
+selected: true
+coverage: "Adopted by startups working on AI for formal verification (e.g., <a href='https://harmonic.fun/news#blog-post-verina-bench-sota'>Harmonic</a>, <a href='https://logicalintelligence.com/blog/aleph-leading-benchmarks'>Logical Intelligence</a>, <a href='https://www.latent.space/p/axiom'>Axiom</a>)"
 ---

@@ -10,6 +10,4 @@ date1: 2026-02-10
 award: "(Spotlight)"
 icml: https://arxiv.org/pdf/2412.16075
 cacm: https://dl.acm.org/doi/10.1145/3750038
-highlight: true
-topic: ml
 ---

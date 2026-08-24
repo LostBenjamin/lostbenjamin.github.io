@@ -1,0 +1,11 @@
+---
+layout: post
+title: "OpenSage: Self-programming Agent Generation Engine"
+date: 2026-06-03
+categories: research
+authors: "Hongwei Li*, Zhun Wang*, Qinrun Dai, Yuzhou Nie, Jinjun Peng, Ruitong Liu, Jingyang Zhang, Kaijie Zhu, <u>Jingxuan He</u>, Lun Wang, Yangruibo Ding, Yueqi Chen, Wenbo Guo, Dawn Song"
+venue: "International Conference on Machine Learning (ICML)"
+paper: https://arxiv.org/pdf/2602.16891
+code: https://github.com/opensage-agent/opensage-adk
+website: https://www.opensage-agent.ai/
+---

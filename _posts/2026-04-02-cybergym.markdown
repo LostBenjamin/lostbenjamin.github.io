@@ -5,11 +5,11 @@ date: 2026-04-02
 categories: research
 authors: "Zhun Wang, Tianneng Shi, <u>Jingxuan He</u>, Matthew Cai, Jialin Zhang, Dawn Song"
 venue: "International Conference on Learning Representations (ICLR)"
-award: "(Oral) &nbsp; (Adopted by Anthropic: <a href='https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf' style='color:red'>link</a>)"
+award: "(Oral)"
 paper: https://arxiv.org/pdf/2506.02548
 website: https://www.cybergym.io/
 code: https://github.com/sunblaze-ucb/cybergym
 dataset: https://huggingface.co/datasets/sunblaze-ucb/cybergym
-highlight: true
-topic: ml
+selected: true
+coverage: "Adopted by frontier AI industry (e.g., <a href='https://x.com/sama/status/2069121360744550796'>OpenAI</a>, <a href='https://www.anthropic.com/glasswing'>Anthropic</a>, <a href='https://z.ai/blog/glm-5.3'>Z.ai</a>, <a href='https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731'>DeepSeek</a>, <a href='https://x.com/satyanadella/status/2054351354156794163'>Microsoft</a>)"
 ---

@@ -1,0 +1,11 @@
+---
+layout: post
+title: "IDEAS: C-to-Rust Translation Using Improved Large Language Model Decoding and Automated Equivalence Testing"
+date: 2026-09-01
+categories: research
+authors: "Cory Cornelius, Marcela S. Melara, Weilin Xu, Marius Arvinte, Marius Momeu, <u>Jingxuan He</u>, Koushik Sen, Dawn Song"
+venue: "IEEE Security & Privacy Magazine"
+publication_type: journal
+paper: https://ieeexplore.ieee.org/abstract/document/11635938
+code: https://github.com/IntelLabs/IDEAS
+---

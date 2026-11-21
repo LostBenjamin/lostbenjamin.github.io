@@ -151,14 +151,14 @@
             <td style="padding:1.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p style="text-align: justify;margin-bottom:0.6em;">
-                My research spans AI, programming languages, and security. I seek to answer a key question: <em>How does AI reshape programming?</em>
+                My research lies at the intersection of AI, security, and programming languages. I study how AI reshapes programming and how we can safely benefit from its capabilities.
               </p>
               <ul style="margin:0 0 1em 0;padding-left:1em;list-style-position:outside;">
                 <li style="text-align: justify;margin-bottom:0.6em;">
-                    <em>Security is a direct motivation.</em> AI is becoming ever more capable of discovering and exploiting vulnerabilities, yet it keeps introducing them into the code it generates. My work has demonstrated these risks at scale and is widely used by the frontier AI industry (<a href="https://arxiv.org/pdf/2506.02548">CyberGym</a>, <a href="https://arxiv.org/pdf/2605.11086">ExploitGym</a>, <a href="https://arxiv.org/pdf/2502.11844">BaxBench</a>).
+                    <em>Security and safety are my primary motivation.</em> Through the lens of cybersecurity, my work has revealed emerging risks posed by increasingly capable AI agents and has been adopted across the frontier AI industry (<a href="https://arxiv.org/pdf/2506.02548">CyberGym</a>, <a href="https://arxiv.org/pdf/2605.11086">ExploitGym</a>, <a href="https://arxiv.org/pdf/2302.05319">SVEN</a>).
                 </li>
                 <li style="text-align: justify;">
-                    <em>Guarantees by construction are my response.</em> AI can absorb much of the effort traditionally required by secure- or correct-by-construction techniques, such as adopting safer programming languages, making them practical at unprecedented scale. I therefore build these techniques and their guarantees into how AI generates code, via <a href="https://arxiv.org/pdf/2504.09246">typing</a>, <a href="https://arxiv.org/pdf/2607.13921">compilation</a>, <a href="https://arxiv.org/pdf/2505.23135">proofs</a>, and <a href="https://arxiv.org/pdf/2302.05319">training</a>.
+                    <em>Guarantees by construction are my response.</em> AI can absorb much of the effort traditionally required to apply techniques in programming languages and formal methods, making formal guarantees practical at unprecedented scale. My work uses <a href="https://arxiv.org/pdf/2504.09246">type systems</a>, <a href="https://arxiv.org/pdf/2607.13921">compiler feedback</a>, and <a href="https://arxiv.org/pdf/2505.23135">formal verification</a> to make AI-generated code correct and secure by construction.
                 </li>
               </ul>
             </td>
@@ -222,21 +222,10 @@
 
         <div id="all-papers-view" class="paper-view" hidden>
           <section class="paper-group">
-            <h3 class="paper-group-title">Recent Preprints</h3>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              {% for post in site.posts %}
-              {% if post.categories contains 'research' and post.publication_type == 'recent-preprint' %}
-                {% include paper-row.html post=post %}
-              {% endif %}
-              {% endfor %}
-            </table>
-          </section>
-
-          <section class="paper-group">
             <h3 class="paper-group-title">Conference Publications</h3>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               {% for post in site.posts %}
-              {% if post.categories contains 'research' and post.publication_type != 'workshop-preprint' and post.publication_type != 'recent-preprint' %}
+              {% if post.categories contains 'research' and post.publication_type != 'journal' and post.publication_type != 'workshop-preprint' and post.publication_type != 'recent-preprint' %}
                 {% include paper-row.html post=post %}
               {% endif %}
               {% endfor %}
@@ -244,11 +233,18 @@
           </section>
 
           <section class="paper-group">
-            <h3 class="paper-group-title">Workshop Papers and Other Preprints</h3>
+            <h3 class="paper-group-title">Journal Articles, Workshop Papers, and Preprints</h3>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               {% for post in site.posts %}
-              {% if post.categories contains 'research' and post.publication_type == 'workshop-preprint' %}
+              {% if post.categories contains 'research' and post.publication_type == 'journal' %}
                 {% include paper-row.html post=post %}
+              {% endif %}
+              {% endfor %}
+              {% for post in site.posts %}
+              {% if post.categories contains 'research' %}
+                {% if post.publication_type == 'workshop-preprint' or post.publication_type == 'recent-preprint' %}
+                  {% include paper-row.html post=post %}
+                {% endif %}
               {% endif %}
               {% endfor %}
             </table>
